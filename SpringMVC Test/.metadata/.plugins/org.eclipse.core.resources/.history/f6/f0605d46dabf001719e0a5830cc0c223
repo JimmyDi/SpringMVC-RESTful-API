@@ -1,0 +1,12 @@
+package com.di.web;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+public class diAction{
+	@RequestMapping(value = "/hello",produces = "text/plain;charset=UTF-8")
+	public @ResponseBody
+	String hello(){
+		return "hi!";
+	}
+}

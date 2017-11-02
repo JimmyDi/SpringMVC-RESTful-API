@@ -1,0 +1,13 @@
+1509630354237	Move 'web.xml' to 'WEB-INF'
+1509630644519	Delete element
+1509632485993	Rename type 'controller'
+1509632962221	Rename compilation unit 'person.java'
+1509632990538	Rename compilation unit 'person.java'
+1509633024736	Rename compilation unit 'person.java'
+1509633058089	Delete element
+1509642005318	Delete element
+1509642011674	Delete elements
+1509642366322	Rename resource 'applicationContext.xml'
+1509642769555	Move 'springmvc-config.xml' to 'resources'
+1509659505537	Move 'jquery-1.11.1.min.js' to 'uikit-2.25.0'
+1509659541339	Move 'jquery-1.11.1.min.js' to 'webapp'

@@ -1,0 +1,8 @@
+package com.di.entity;
+
+public class person{
+	private String name;
+	private String sex;
+	private int age;
+	private int id;
+}

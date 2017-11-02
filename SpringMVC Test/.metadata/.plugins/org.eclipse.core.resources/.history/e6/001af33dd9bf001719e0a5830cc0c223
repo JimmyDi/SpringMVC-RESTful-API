@@ -1,0 +1,8 @@
+package com.di.web;
+
+import java.util.logging.Logger;
+
+public class diAction{
+	private static final Logger logger=Logger.getLogger(diAction.class);
+	
+}

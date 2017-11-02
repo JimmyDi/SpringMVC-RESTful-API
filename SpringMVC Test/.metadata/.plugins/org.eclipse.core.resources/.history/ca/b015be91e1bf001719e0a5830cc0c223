@@ -1,0 +1,28 @@
+<%@ page language = "java" import="java.util.*" pageEncoding = "UTF-8" %>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() +"://"
+			+request.getServerName()+":"+request.getServerPort()
+			+path+"/";
+%>
+
+<html>
+<head>
+	<base href="<%=basePath%>">
+	<title>SpirngMVC Test</title>
+	<meta http-equiv="pragma" content="no-cache">  
+    <meta http-equiv="cache-control" content="no-cache">  
+    <meta http-equiv="expires" content="0">  
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">  
+    <meta http-equiv="description" content="This is my page">  
+    <link rel="stylesheet" type="text/css"   href="uikit-2.3.1/css/uikit.gradient.min.css">  
+    <link rel="stylesheet" type="text/css" href="uikit-2.3.1/addons/css/notify.gradient.min.css"> 
+</head>
+<div 
+	style="width:800px;margin-top:10px;margin-left:atuo;margin-right:auto;text-
+	align:center;">
+	<h2>SpringMVC Test</h2>
+<body>
+<h2>Hello World!</h2>
+</body>
+</html>

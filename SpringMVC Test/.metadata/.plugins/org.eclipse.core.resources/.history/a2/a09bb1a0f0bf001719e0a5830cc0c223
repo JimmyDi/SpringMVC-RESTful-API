@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<!-- 建立数据源 -->
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+  <!-- 数据库驱动，我这里使用的是Mysql数据库 -->
+   <property name="driverClassName">
+    <value>com.mysql.jdbc.Driver</value>
+   </property>
+  <!-- 数据库地址，这里也要注意一下编码，不然乱码可是很郁闷的哦！ -->
+   <property name="url">
+    <value>
+       jdbc:mysql://localhost:3306/seckill?useUnicode=true&characterEncoding=utf-8
+   </value>
+   </property>
+  <!-- 数据库的用户名 -->
+   <property name="username">
+    <value>root</value>
+   </property>
+  <!-- 数据库的密码 -->
+   <property name="password">
+    <value>liudi19920302</value>
+   </property>
+</bean>
+
+</beans>

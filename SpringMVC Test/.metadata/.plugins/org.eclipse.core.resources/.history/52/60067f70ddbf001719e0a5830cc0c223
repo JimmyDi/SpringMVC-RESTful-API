@@ -1,0 +1,64 @@
+package com.di.web;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.di.entity.Person;
+
+import net.sf.json.JSONObject;
+
+public class diAction{
+	@RequestMapping(value = "/hello",produces = "text/plain;charset=UTF-8")
+	public @ResponseBody
+	String hello(){
+		return "hi!";
+	}
+	@RequestMapping(value="/say/{msg}",produces="application/json;charset=UTF-8")
+	public  @ResponseBody
+	String say(@PathVariable(value="msg") String msg){
+		return "{\"msg\":\"you say:'"+msg+"'\"}";
+	}
+	
+	@RequestMapping(value="/person/{id:\\d+}",method=RequestMethod.GET)
+	public @ResponseBody
+	Person getPerson(@PathVariable("id") int id){
+		Person person = new Person();
+		person.setName("Zhang San");
+		person.setSex("male");
+		person.setAge(30);
+		person.setId(id);
+		return person;
+	}
+	
+	@RequestMapping(value="/person/{id:\\d+}",method=RequestMethod.DELETE)
+	public @ResponseBody
+	Object deletePerson(@PathVariable("id") int id){
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("msg","delete succeed");
+		return jsonObject;
+	}
+	
+	@RequestMapping(value="/person",method = RequestMethod.POST)
+	public @ResponseBody
+	Object addPerson(Person person){
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
